@@ -52,7 +52,7 @@ colnames(steps_each_day) <- c("date", "steps")
 hist(as.numeric(steps_each_day$steps), breaks = 20, col = "blue", xlab = "Number of Steps", main= "Histogram of the steps taken each day")
 ```
 
-![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6-1.png)
+![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5-1.png)
 
 ```r
 # Mean
@@ -84,7 +84,7 @@ plot(as.integer(levels(steps_per_interval$interval)), steps_per_interval$average
      xlab = "Interval", ylab = "Average Number of Steps", main = "Average Daily Activity Pattern",  col ="blue")
 ```
 
-![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7-1.png)
+![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6-1.png)
 
 ```r
 # Maximum number of average steps
@@ -179,7 +179,7 @@ colnames(steps_each_day_complete) <- c("date", "steps")
 hist(as.numeric(steps_each_day_complete$steps), breaks = 20, col = "blue", xlab = "Number of Steps", main= "Histogram of the steps taken each day")
 ```
 
-![plot of chunk unnamed-chunk-8](figure/unnamed-chunk-8-1.png)
+![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7-1.png)
 
 ```r
 # Mean
@@ -232,6 +232,6 @@ library(lattice)
 xyplot(average_steps ~  interval | day, data = week_data, layout = c(1,2), type ="l", ylab="Number of Steps")
 ```
 
-![plot of chunk unnamed-chunk-9](figure/unnamed-chunk-9-1.png)
+![plot of chunk unnamed-chunk-8](figure/unnamed-chunk-8-1.png)
 
 
